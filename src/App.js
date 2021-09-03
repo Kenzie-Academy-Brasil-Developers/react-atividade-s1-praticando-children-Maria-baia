@@ -1,15 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import CenteredCard from './components/CenteredCard'
+import centeredCard from './components/CenteredCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <CenteredCard children='Children 1'/>
-        <CenteredCard children='Children 2'/>
-        <CenteredCard children='Children 3'/>
-      </header>
+      <div className="App-header">
+        <CenteredCard children={1}>
+          <h1>Children 1</h1>
+          <h1>Children 2</h1>
+          <h1>Children 3</h1>
+        </CenteredCard>
+      </div>
     </div>
   );
 }
